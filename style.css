@@ -1,0 +1,19 @@
+.window{
+	width: 300px;
+	height:200px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.slideshow{
+	display: flex;
+	transition: all 0.3s;
+}
+
+.slideshow > img{
+	width: 100%;
+}
+
+.buttons,.controls{
+	text-align: center;
+}
