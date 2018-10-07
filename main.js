@@ -24,7 +24,7 @@ $('#next').on('click',function(){
 
 let autoPlay = setInterval(function(){
 	goToSlide(current+1)
-},1500)
+},3000)
 
 $('.window').on('mouseenter',function(){
 	window.clearInterval(autoPlay)
@@ -33,7 +33,7 @@ $('.window').on('mouseenter',function(){
 $('.window').on('mouseleave',function(){
 	autoPlay = setInterval(function(){
 		goToSlide(current+1)
-	},1500)
+	},3000)
 })
 
 $(document).on("visibilitychange", function(){
@@ -42,7 +42,7 @@ $(document).on("visibilitychange", function(){
 	}else if(document.visibilityState === 'visible'){
 		autoPlay = setInterval(function(){
 			goToSlide(current+1)
-		},1500)
+		},3000)
 	}
 })
 
